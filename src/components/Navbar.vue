@@ -5,7 +5,10 @@
 <template>
   <div class="flex justify-between items-center h-20 text-cyan-200 font-bold bg-gray-800 px-8 m-5 rounded-xl shadow-md">
     <!-- Left Title -->
-    <RouterLink to="/" class="text-4xl">My Todo App</RouterLink>
+     <div class="flex items-center space-x-4">
+      <img src="../assets/circle-check-solid.svg" alt="Todo-icon" class="h-10 w-10">
+      <RouterLink to="/" class="text-4xl text-left">My Todo App</RouterLink>
+     </div>
 
     <!-- Right Nav Links -->
     <div class="flex space-x-6 text-2xl">

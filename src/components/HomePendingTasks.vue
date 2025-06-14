@@ -29,6 +29,7 @@
 
       <!-- Fixed Header -->
       <div class="flex justify-center items-center bg-gray-700 h-20 mb-4 w-4/5 rounded-xl self-center">
+        <img src="../assets/list-solid.svg" alt="Icon" class="h-7 w-7 mr-3">
         <span class="text-cyan-200 text-2xl font-bold">My Pending Tasks ...</span> 
       </div>
 
