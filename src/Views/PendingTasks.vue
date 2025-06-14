@@ -1,5 +1,5 @@
 <script setup>
-    import HomePendingTasks from '../components/HomePendingTasks.vue'
+    import PendingTasks from '../components/PendingTasks.vue'
     import Navbar from '../components/Navbar.vue';
 </script>
 
@@ -7,6 +7,6 @@
     <div class="min-h-screen bg-gray-900">
         <!-- Navbar on top -->
         <Navbar />
-        <HomePendingTasks />
+        <PendingTasks />
     </div>
 </template>

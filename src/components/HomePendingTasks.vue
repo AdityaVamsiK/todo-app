@@ -25,7 +25,7 @@
 
 <template>
   <div class="flex flex-col items-center">
-    <div class="flex flex-col bg-gray-800 rounded-xl w-[24rem] min-h-[400px] py-4">
+    <div class="flex flex-col bg-gray-800 rounded-xl w-[40rem] min-h-[400px] py-4">
 
       <!-- Fixed Header -->
       <div class="flex justify-center items-center bg-gray-700 h-20 mb-4 w-4/5 rounded-xl self-center">

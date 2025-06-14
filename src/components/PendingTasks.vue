@@ -4,7 +4,7 @@
     const tasks = ref(taskData.tasks)
 
     const filteredTasks = computed(() => {
-      return tasks.value.filter((task) => task.Status === 'Complete')
+      return tasks.value.filter((task) => task.Status === 'Incomplete')
     })
 
 
@@ -25,11 +25,11 @@
 
 <template>
   <div class="flex flex-col items-center justify-center">
-    <div class="flex flex-col bg-gray-800 rounded-xl w-[40rem] min-h-[400px] py-4">
+    <div class="flex flex-col bg-gray-800 rounded-xl w-[80rem] min-h-[400px] py-4">
 
       <!-- Fixed Header -->
       <div class="flex justify-center items-center bg-gray-700 h-20 mb-4 w-4/5 rounded-xl self-center">
-        <span class="text-cyan-200 text-2xl font-bold">My Finished Tasks ...</span>
+        <span class="text-cyan-200 text-2xl font-bold">My Pending Tasks ...</span>
       </div>
 
       <!-- Scrollable or auto-expanding Task list -->
@@ -40,6 +40,7 @@
           class="flex justify-between items-center bg-gray-700 min-h-[5rem] w-4/5 rounded-xl text-cyan-200 text-lg px-4 font-medium text-center"
         >
           <span class="text-left w-full">{{ task.Description }}</span>
+          <span class="text-center text-gray-200">{{ task.Date }}</span>
           <input
             type="checkbox"
             checked
