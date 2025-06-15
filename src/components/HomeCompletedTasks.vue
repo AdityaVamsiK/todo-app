@@ -1,10 +1,21 @@
 <script setup>
-    import { ref, computed } from 'vue';
-    import taskData from '../tasks.json'
-    const tasks = ref(taskData.tasks)
+    import { ref, computed, onMounted } from 'vue';
+    import axios from 'axios'
+
+    const tasks = ref([])
 
     const filteredTasks = computed(() => {
       return tasks.value.filter((task) => task.Status === 'Complete')
+    })
+
+    // Fetch from backend on mount
+    onMounted(async () => {
+      try {
+        const response = await axios.get('http://localhost:8000/home_todos')
+        tasks.value = response.data
+      } catch (error) {
+        console.error('Failed to fetch tasks:', error)
+      }
     })
 
 
